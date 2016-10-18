@@ -53,11 +53,12 @@ def post_render():
 
     arg1 = get.args.form('arg1')
     arg2 = get.args.form('arg2')
+    arg3 = get.args.form('arg3')
 
     return render_template('form-result.html',
                             arg1=arg1,
                             arg2=arg2,
-                            arg3="fixed value")
+                            arg3=arg3)
 
 
 
